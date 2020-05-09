@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="mr-0">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="/img/coffee_logo.png" alt="logo image" class="img-fluid img-position">
+                </div>
+                <div class="col">
+                    <h1 class="target">coffee house</h1>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a data-target="#joinTeam" role="button" class="btn btn-lg btn-info" data-toggle="modal">JOIN
+                        THE TEAM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="joinTeam" role="dialog" aria-hidden="true" id="modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign-Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordInput">re-enter password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="save-changes">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark stick-top bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/img/coffee_logo.png" alt="logo image" height="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#items">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="items">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link text-light" href="#"><i class="fa fa-home fa-sm"></i>
+                            HOME</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#lr-events"><i class="fa fa-calendar fa-sm"></i> LR
+                            EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#host"><i class="fa fa-user fa-sm"></i> HOST MY
+                            EVENT</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#contact"><i
+                                class="fa fa-address-card fa-sm"></i> CONTACT</a></li>
+                </ul>
+                <span class="navbar-text ml-auto cursorChange">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="parallax">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 message">
+                    <img src="/img/Artboard-1.png" alt="welcome message" class="welcome-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll"><img src="/img/scroll.svg" alt="scroll icon">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6 change-style">
+                <img src="/img/seond-image.webp" alt="info about the coffee house">
+                <p class="p-fonts">A PLACE TO CONNECT WITH AN OLD FRIEND...</p>
+                <p class="p-fonts">TO MAKE A NEW ONE...</p>
+                <p class="p-fonts">TO ENJOY COMUNITY...</p>
+                <p class="p-fonts">TO HAVE A PARTY...</p>
+                <p class="p-fonts">TO LIVE LIFE TOGETHER...</p> <br>
+                <p class="p-fonts">BECAUSE HERE...</p> <br>
+                <p class="p-fonts"><b>YOU MATTER</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid parallaxTwo" id="contact">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="hours">HOURS</h1>
+            </div>
+            <div class="col-sm-12 pl-5">
+                <p class="times">Monday - Friday: 8am-9pm</p>
+                <p class="times">Saturday: 8am-8pm</p>
+                <p class="times">Sunday: 12pm-5pm</p>
+            </div>
+            <div class="col mt-5 pl-5">
+                <p class="times">360-658-8646</p>
+            </div>
+            <div class="col-sm-12 pl-5">
+                <p class="times">general questions: <a href="mailto:someone@example.com">email</a></p>
+                <p class="times">event questions/inquiry: <a href="mailto:someone@example.com">email</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="lr-events">
+        <div class="row center">
+            <div class="col-12 text-center">
+                <h1 class="h1-events">UPCOMING EVENTS</h1>
+                <span></p>CLICK IMAGES FOR MORE INFO</span>
+            </div>
+            <span class="ml-5 mt-5 brd-one"><img src="/img/event-image-1.webp" alt="event image"></span>
+            <span class="vert-one mt-5"></span>
+            <span class="ml-5 mt-5 brd-two"><img src="/img/event-image-2.webp" alt="event image"></span>
+            <span class="ml-5 mt-4 pl-3"><a href="https://www.wandercoffeebar.com/"><img src="/img/event-image-3.webp" alt="event image"></a></span>
+            <span class="ml-5 vert-two"></span>
+            <span class="ml-5 pl-3 mt-4"><img src="/img/event-image-4.webp" alt="event image"></span>
+        </div>
+    </div>
+    <div class="container-fluid background-change mt-2" id="host">
+        <div class="row ml-3">
+            <div class="col col-lg-10">
+                <h2 class="h2-change mt-5">h<span class="hr-line">ost</span> an event</h2>
+                <p class="p-change mt-5">Thank you so much for considering the Living Room to host your event.  We are so grateful to be a resource 
+                    for our community!  Please know we are honoring our amazing volunteers from June 1st through August 5th by making no 
+                    reservations that require any kind of hosting/catering/set-up/tear down.  We look forward to hosting your event with 
+                    generous hospitality, catering, and hosting as needed after our seasonal break!  Please reach out fo us again!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid height-change">
+        <div class="row ml-5 pl-5">
+            <div class="col-sm-8 ml-3 pl-3 mt-5">
+                <h2 class="h2-changeTwo"><span class="hr-lineTwo">joi</span>n the team</h2>
+                <p class="mt-5">interested in being a part of the living room family?  We would love to have you!  You can host events, create coffee drinks, make food  or just love on people!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhU1rUcu64AIlRY1GQtQEXwi5-zJQbALPqNIs4hceNxUlbOQ/viewform" class="btn btn-success btn-lg active" role="button">join the team!</a>
+            </div>
+        </div>
+    </div>
+    <div class="embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" src="https://maps.google.com/?q=40.5509,-105.0668&output=svembed"></iframe>
+      </div>
+    </div>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icons push-left ml-2 mx-auto"> 
+        <div>
+            
+            <a class="btn btn-social-icon btn-facebook btn-sm mb-2" href="https://www.facebook.com/lroomcoffeehouse/"><i
+                class="fa fa-facebook fa-lg"></i></a> <br>
+            <a class="btn btn-social-icon btn-instagram btn-sm" href="https://www.instagram.com/livingroomcoffeehouse/"><i
+                class="fa fa-instagram fa-lg"></i></a>
+        </div>
+    </div>
+
+    <!--scripts-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

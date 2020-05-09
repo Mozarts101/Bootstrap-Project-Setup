@@ -1,17 +1,16 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "sans-serif";
 }
 
-h1, h2, h3 {
-    font-family: "Lobster", cursive;
+.target {
+    font-family: "Lobster", "Roboto Mono";
+    text-decoration: underline;
+    font-size: 300%;
 }
 
-h2 {
-    color: #3046C5;
-}
 
 header h2 {
-    color: #CEC8FF;
+    color: #000000;
 }
 
 .site-footer {
@@ -22,7 +21,7 @@ header h2 {
 .jumbotron {
     margin: 0px;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right,#9DC5C3,#5E5C5C);
     color: white;
 }
 
@@ -53,4 +52,186 @@ header h2 {
 
 .carousel {
     border: solid #5637DD;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.img-position {
+    position: relative;
+    right: 35px;
+}
+
+.parallax {
+    background-image: url("/img/cafe-image.jpg");
+    min-height: 768px; 
+    background-attachment: fixed;
+    background-position: center;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+  }
+
+.scroll {
+    width: 30%;
+    animation: move 1s infinite alternate;
+}
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+        }
+    to {
+            transform: translateY(20px);
+        }
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll {
+        visibility: hidden;
+    }
+  }
+
+  .scroll {
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%,-50%);
+  }
+
+.message {
+    top: 160px;
+}
+
+.change-style {
+    color: #605E5E;
+    font-family: sans-serif;
+    font-size: 130%;
+    width: 100%;
+    height: auto;
+}
+
+.parallaxTwo {
+    background-image: url("/img/cafe-food-image.jpg");
+    min-height: 768px; 
+    background-attachment: fixed;
+    background-position: center;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.hours {
+    color: #000000;
+    font-family: montserrat;
+    font-size: 90px;
+    border-bottom: 4px solid white;
+}
+
+
+.times {
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+a {
+    color: black;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(/fonts/Montserrat-Light.ttf);
+}
+
+.h1-events {
+    color: #404041;
+    font-size: 350%;
+    font-family: montserrat;
+}
+
+.vert-one {
+    border-right: 1px solid #4e4e4e;
+    padding-right: 2em;
+    height: 450px;
+    position: relative;
+    bottom: .5em;
+}
+.vert-two {
+    border-right: 1px solid #4e4e4e;
+    height: 400px;
+    position: relative;
+    top: 3em;
+}
+
+.brd-one {
+    border: 1px solid #4e4e4e;
+    padding: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.brd-two {
+    border: 1px solid #4e4e4e;
+    padding: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.p-fonts {
+    font-family: montserrat;
+}
+
+.background-change {
+    background-color: #a2ac87;
+    height: 470px;
+}
+
+.hr-line {
+    border: 2px solid lightgray;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 10px;
+}
+.hr-lineTwo {
+    border: 1px solid #000000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 20px;
+}
+
+.h2-change {
+    font-family: montserrat;
+    font-size: 50px;
+    color: #fff;
+}
+.h2-changeTwo {
+    font-family: montserrat;
+    font-size: 50px;
+    color: #000;
+}
+.p-change {
+    font-size: 19px;
+    color: #fff;
+}
+
+.height-change {
+    height: 400px;
+    background-color: #fafafa;
+}
+
+.icons {
+    position: sticky;
+    bottom: 25em;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
 }
